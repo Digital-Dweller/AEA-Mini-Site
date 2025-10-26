@@ -1,0 +1,42 @@
+﻿body
+{
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 100%
+}
+
+#AEA_icon img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+#CS_icon img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+@media (max-width: 768px){
+    #AEA_icon {
+        width: 15%;
+        max-width: 130px;
+    }
+    #CS_icon {
+        width: 20%;
+        max-width: 180px;
+    }
+}
+@media (min-width: 768px) {
+    #AEA_icon {
+        width: 10%;
+        max-width: 300px;
+    }
+    #CS_icon {
+        width: 15%;
+        max-width: 550px;
+    }
+}
