@@ -33,5 +33,35 @@
             Literacy is a community effort. Our initiative encourages collaboration among educators, administrators, and specialists. Share ideas, ask questions, and connect with peers to strengthen literacy outcomes across the region.
         </p>
     </div>
+    <form id="contact_form">
+        <div class="contact_form_row">
+            <div class="contact_form_input">
+                <label for="firstName">First Name</label>
+                <input type="text" id="firstName" name="firstName" placeholder="First"/>
+            </div>
+            <div class="contact_form_input">
+                <label for="lastName">Last Name</label>
+                <input type="text" id="lastName" name="lastName" placeholder="Last"/>
+            </div>                        
+        </div>
+        <div class="contact_form_row">
+            <div class="contact_form_input">
+                <label for="email">Email Address</label>
+                <input type="text" id="email" name="email" placeholder="john.doe@example.com"/>
+            </div>
+            <div class="contact_form_input">
+                <label for="phone">Phone Number</label>
+                <input type="text" id="phone" name="phone" placeholder="(555) 555-5555"/>
+            </div>                        
+        </div>
+        <div id="contact_form_message">
+            <label for="message">Message</label>
+            <textarea id="message" rows="8" maxlength="500" placeholder="Type your message here..."></textarea>
+        </div>
+        <div id="contact_form_buttons">
+            <button id="contact_form_cancel" type="button">Cancel</button>
+            <button id="contact_form_submit" type="submit">Submit</button>
+        </div>
+    </form>
 </body>
 </html>
