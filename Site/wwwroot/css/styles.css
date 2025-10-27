@@ -47,6 +47,22 @@ header {
     border-bottom: solid;
     border-color: grey;
 }
+#contact_form {
+    background-color: white;
+}
+
+.contact_form_input {
+    display: flex;
+    flex-direction: column;
+}
+#contact_form_message {
+    display: flex;
+    flex-direction: column;
+}
+#contact_form_buttons {
+    display: flex;
+    justify-content: flex-end;
+}
 
 @media (max-width: 768px){
     #AEA_icon {
@@ -85,6 +101,38 @@ header {
     #content_section p {
         font-size: 1rem;
         padding-bottom: 1.5rem;
+    }
+    #contact_form {
+        margin: 3rem;
+        padding: 2rem;
+        font-size: 1rem;
+    }
+    .contact_form_row {
+        display: flex;
+        flex-direction: column;
+    }
+    #contact_form input {
+        font-size: 1rem;
+        padding: .5rem;
+    }
+    #contact_form textarea {
+        font-size: 1rem;
+        max-width: 15rem;
+        scrollbar-width: auto;
+        padding: .25rem;
+    }
+    #contact_form button {
+        font-size: 1rem;
+    }
+    .contact_form_row {
+    }
+    .contact_form_input {
+        width: 15rem;
+        margin-bottom: 1rem;
+    }
+    #contact_form_buttons {
+        gap: 1rem;
+        margin-top: 1rem;
     }
 }
 @media (min-width: 768px) {
@@ -133,5 +181,37 @@ header {
     #content_section p {
         font-size: 1.75rem;
         padding-bottom: 3rem;
+    }
+    #contact_form {
+        margin: 5rem;
+        padding: 3rem;
+        font-size: 1.5rem;
+    }
+    .contact_form_row {
+        display: flex;
+        flex-direction: row;
+    }
+    #contact_form input {
+        font-size: 1.5rem;
+        padding: .5rem;
+    }
+    #contact_form textarea {
+        font-size: 1.5rem;
+        padding: .5rem;
+    }
+    #contact_form button {
+        font-size: 1.5rem;
+    }
+    .contact_form_row {
+        gap: 3rem;
+        margin-bottom: 1rem;
+    }
+    .contact_form_input {
+        width: 25rem;
+    }
+
+    #contact_form_buttons {
+        gap: 1rem;
+        margin-top: 1rem;
     }
 }
