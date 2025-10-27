@@ -1,6 +1,14 @@
-﻿body
-{
+﻿*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     margin: 0;
+    background-color: #f7f2ed;
 }
 header {
     display: flex;
@@ -8,7 +16,8 @@ header {
     justify-content: center;
     position: relative;
     width: 100%;
-    max-width: 100%
+    max-width: 100%;
+    background-color: white;
 }
 #AEA_icon {
     position: absolute;
@@ -17,17 +26,26 @@ header {
 #AEA_icon img {
     width: 100%;
     height: auto;
-    display: block;
 }
 
 #CS_icon img {
     width: 100%;
     height: auto;
-    display: block;
 }
 #hero_section {
+    width: 100%;
     background-color: #0D2C58;
     color: white;
+}
+#content_section {
+    background-color: white;
+}
+#content_section h3 {
+    margin: 0;
+}
+#content_section p {
+    border-bottom: solid;
+    border-color: grey;
 }
 
 @media (max-width: 768px){
@@ -56,6 +74,17 @@ header {
     #hero_section h2 {
         text-align: center;
         font-size: .75rem;
+    }
+    #content_section {
+        margin: 0 2rem 0 2rem;
+        padding: 1.5rem;
+    }
+    #content_section h3 {
+        font-size: 1.25rem;
+    }
+    #content_section p {
+        font-size: 1rem;
+        padding-bottom: 1.5rem;
     }
 }
 @media (min-width: 768px) {
@@ -92,5 +121,17 @@ header {
     #hero_section h2 {
         text-align: center;
         font-size: 2.5rem;
+    }
+    #content_section {
+        margin: 0 10rem 0 10rem;
+        padding: 5rem 5rem 5rem 5rem;
+        max-width: 2200px;
+    }
+    #content_section h3 {
+        font-size: 2.25rem;
+    }
+    #content_section p {
+        font-size: 1.75rem;
+        padding-bottom: 3rem;
     }
 }
