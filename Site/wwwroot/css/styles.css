@@ -7,6 +7,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    height: 100vh;
     margin: 0;
     background-color: #f7f2ed;
 }
@@ -46,6 +47,12 @@ header {
 #content_section p {
     border-bottom: solid;
     border-color: grey;
+}
+.hidden {
+    display: none;
+}
+#contact_form_container {
+    flex: 1;
 }
 #contact_form {
     background-color: white;
@@ -303,7 +310,7 @@ header {
         margin-top: 1rem;
     }
     #footer {
-        height: 14rem;
+        padding: 3rem;
     }
     #footer_info {
         position: absolute;
@@ -311,9 +318,13 @@ header {
         color: white;
         margin: 0 0 2rem 3rem;
     }
-
+    #footer_middle {
+        justify-content: center;
+        align-content: center;
+    }
     #footer button{
         font-size: 2rem;
+        margin-top: 2rem;
         padding: .75rem 1.5rem;
     }
     .contact_info_row img {

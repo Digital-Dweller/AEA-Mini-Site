@@ -2,9 +2,10 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-    <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1.0" />
     <title></title>
     <link rel="stylesheet" href="css/styles.css" />
+    <script src="js/script.js" defer></script>
 </head>
 <body>
     <header>
@@ -36,36 +37,39 @@
             Literacy is a community effort. Our initiative encourages collaboration among educators, administrators, and specialists. Share ideas, ask questions, and connect with peers to strengthen literacy outcomes across the region.
         </p>
     </div>
-    <form id="contact_form">
-        <div class="contact_form_row">
-            <div class="contact_form_input">
-                <label for="firstName">First Name</label>
-                <input type="text" id="firstName" name="firstName" placeholder="First"/>
+    <div id="contact_form_container">
+        <form id="contact_form" class="hidden">
+            <div class="contact_form_row">
+                <div class="contact_form_input">
+                    <label for="firstName">First Name</label>
+                    <input type="text" id="firstName" name="firstName" placeholder="First" />
+                </div>
+                <div class="contact_form_input">
+                    <label for="lastName">Last Name</label>
+                    <input type="text" id="lastName" name="lastName" placeholder="Last" />
+                </div>
             </div>
-            <div class="contact_form_input">
-                <label for="lastName">Last Name</label>
-                <input type="text" id="lastName" name="lastName" placeholder="Last"/>
-            </div>                        
-        </div>
-        <div class="contact_form_row">
-            <div class="contact_form_input">
-                <label for="email">Email Address</label>
-                <input type="text" id="email" name="email" placeholder="john.doe@example.com"/>
+            <div class="contact_form_row">
+                <div class="contact_form_input">
+                    <label for="email">Email Address</label>
+                    <input type="text" id="email" name="email" placeholder="john.doe@example.com" />
+                </div>
+                <div class="contact_form_input">
+                    <label for="phone">Phone Number</label>
+                    <input type="text" id="phone" name="phone" placeholder="(555) 555-5555" />
+                </div>
             </div>
-            <div class="contact_form_input">
-                <label for="phone">Phone Number</label>
-                <input type="text" id="phone" name="phone" placeholder="(555) 555-5555"/>
-            </div>                        
-        </div>
-        <div id="contact_form_message">
-            <label for="message">Message</label>
-            <textarea id="message" rows="8" maxlength="500" placeholder="Type your message here..."></textarea>
-        </div>
-        <div id="contact_form_buttons">
-            <button id="contact_form_cancel" type="button">Cancel</button>
-            <button id="contact_form_submit" type="submit">Submit</button>
-        </div>
-    </form>
+            <div id="contact_form_message">
+                <label for="message">Message</label>
+                <textarea id="message" rows="8" maxlength="500" placeholder="Type your message here..."></textarea>
+            </div>
+            <div id="contact_form_buttons">
+                <button id="contact_form_cancel" type="button">Cancel</button>
+                <button id="contact_form_submit" type="submit">Submit</button>
+            </div>
+        </form>
+    </div>
+
     <div id="footer">
         <div id="footer_info">
             <h1>Central Rivers AEA</h1>
