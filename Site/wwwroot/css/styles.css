@@ -63,6 +63,44 @@ header {
     display: flex;
     justify-content: flex-end;
 }
+#footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 100%;
+    background-color: #0D2C58;
+    color: white;
+}
+
+#footer_info a {
+    color: white;
+}
+.contact_info_row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+#footer_middle {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    align-content: center;
+    height: 100%;
+
+}
+#footer_middle a{
+    color: white;
+}
+#footer_links {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+}
+
+
 
 @media (max-width: 768px){
     #AEA_icon {
@@ -133,6 +171,56 @@ header {
     #contact_form_buttons {
         gap: 1rem;
         margin-top: 1rem;
+    }
+    #footer {
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    #footer_info {
+        margin: 1rem;
+    }
+    #footer h1 {
+        font-size: 1rem;
+    }
+    #footer h3 {
+        font-size: .75rem;
+    }
+    #footer button {
+        font-size: 1.25rem;
+        padding: .75rem 1.5rem;
+    }
+    .contact_info_row {
+        font-size: .5rem;
+    }
+    .contact_info_row img {
+        width: .5rem;
+        height: .5rem;
+    }
+
+    .contact_info_row h2 {
+        font-size: .65rem;
+        margin: 0;
+
+    }
+
+    #footer_links {
+        font-size: .75rem;
+        gap: 1rem;
+        margin: 1rem 0;
+    }
+
+    #social_media_links {
+        display: flex;
+        flex-direction: row;
+        gap: 1.5rem;
+        margin-bottom: 2rem;
+    }
+
+    .social_icon img {
+        width: 2.5rem;
+        height: auto;
     }
 }
 @media (min-width: 768px) {
@@ -214,4 +302,42 @@ header {
         gap: 1rem;
         margin-top: 1rem;
     }
+    #footer {
+        height: 14rem;
+    }
+    #footer_info {
+        position: absolute;
+        left: 0;
+        color: white;
+        margin: 0 0 2rem 3rem;
+    }
+
+    #footer button{
+        font-size: 2rem;
+        padding: .75rem 1.5rem;
+    }
+    .contact_info_row img {
+        width: 1.5rem;
+        height: 1.5rem;
+    }
+    .contact_info_row h2 {
+        margin: 0;
+    }
+    #footer_links {
+        font-size: 1rem;
+        gap: 1rem;
+        margin: 1rem 0;
+    }
+    #social_media_links {
+        display: flex;
+        position: absolute;
+        right: 0;
+        gap: 1rem;
+        margin-right: 3rem;
+    }
+    .social_icon img{
+        width: 3rem;
+        height:auto;
+    }
+    
 }
