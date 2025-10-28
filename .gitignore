@@ -416,3 +416,8 @@ FodyWeavers.xsd
 *.msix
 *.msm
 *.msp
+/Site/bs-config.json
+/Site/package.json
+/Site/package-lock.json
+/Site/Site.esproj
+/Site/CHANGELOG.md
