@@ -421,3 +421,10 @@ FodyWeavers.xsd
 /Site/package-lock.json
 /Site/Site.esproj
 /Site/CHANGELOG.md
+
+
+/Site.esproj
+/package.json
+/package-lock.json
+/CHANGELOG.md
+/bs-config.json
