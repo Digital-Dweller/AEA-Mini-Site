@@ -225,7 +225,7 @@ header {
         height: auto;
     }
 }
-@media (min-width: 768px) {
+@media (min-width: 768px) and (max-width: 1600px){
     #AEA_icon {
         width: 8%;
         max-width: 300px;
