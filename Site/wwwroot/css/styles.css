@@ -241,6 +241,141 @@ header {
     }
     #hero_section img {
         width: 40%;
+        margin: 1.5rem;
+        max-width: 800px;
+    }
+    #hero_section div {
+        flex-grow: 1;
+        justify-items: center;
+        align-content: center;
+        max-width: 1200px;
+        margin-right: 1.5rem;
+    }
+    #hero_section h1 {
+        text-align: center;
+        font-size: 2.5rem;
+    }
+    #hero_section h2 {
+        text-align: center;
+        font-size: 1.25rem;
+    }
+    #content_section {
+        margin: 0 7rem 0 7rem;
+        padding: 3rem;
+        max-width: 2200px;
+    }
+    #content_section h3 {
+        font-size: 2.25rem;
+    }
+    #content_section p {
+        font-size: 1.75rem;
+        padding-bottom: 3rem;
+    }
+    #contact_form {
+        margin: 5rem;
+        padding: 3rem;
+        font-size: 1.5rem;
+    }
+    .contact_form_row {
+        display: flex;
+        flex-direction: row;
+    }
+    #contact_form input {
+        font-size: 1.5rem;
+        padding: .5rem;
+    }
+    #contact_form textarea {
+        font-size: 1.5rem;
+        padding: .5rem;
+    }
+    #contact_form button {
+        font-size: 1.5rem;
+    }
+    .contact_form_row {
+        gap: 3rem;
+        margin-bottom: 1rem;
+    }
+    .contact_form_input {
+        width: 25rem;
+    }
+    #contact_form_bottom {
+        display: flex;
+        flex-direction: row;
+    }
+    #contact_form_buttons {
+        gap: 1rem;
+        margin-top: 1rem;
+    }
+    #footer {
+        padding: 1rem;
+    }
+    #footer h1 {
+        font-size: 1.5rem;
+    }
+    #footer h3 {
+        font-size: .75rem;
+    }
+    #footer_info {
+        position: absolute;
+        left: 0;
+        color: white;
+        margin: 0 0 2rem 3rem;
+    }
+    .contact_info_row {
+        font-size: .5rem;
+    }
+    #footer_middle {
+        justify-content: center;
+        align-content: center;
+    }
+    #footer button{
+        font-size: 1.25rem;
+        margin-top: 2rem;
+        padding: .75rem 1.5rem;
+    }
+    .contact_info_row img {
+        width: 1.5rem;
+        height: 1.5rem;
+    }
+    .contact_info_row h2 {
+        margin: 0;
+    }
+    #footer_links {
+        font-size: .75rem;
+        gap: .75rem;
+        margin: 1rem 0;
+    }
+    #social_media_links {
+        display: flex;
+        position: absolute;
+        right: 0;
+        gap: 1rem;
+        margin-right: 3rem;
+    }
+    .social_icon img{
+        width: 2rem;
+        height:auto;
+    }
+}
+@media (min-width: 1600px) {
+    #AEA_icon {
+        width: 8%;
+        max-width: 300px;
+    }
+
+    #CS_icon {
+        width: 15%;
+        max-width: 550px;
+    }
+
+    #hero_section {
+        display: flex;
+        padding: 0 5rem 0 5rem;
+        justify-content: center;
+    }
+
+    #hero_section img {
+        width: 40%;
         margin: 3rem;
         max-width: 800px;
     }
@@ -319,7 +454,7 @@ header {
         justify-content: center;
         align-content: center;
     }
-    #footer button{
+    #footer button {
         font-size: 2rem;
         margin-top: 2rem;
         padding: .75rem 1.5rem;
@@ -343,9 +478,8 @@ header {
         gap: 1rem;
         margin-right: 3rem;
     }
-    .social_icon img{
+    .social_icon img {
         width: 3rem;
-        height:auto;
+        height: auto;
     }
-    
 }
