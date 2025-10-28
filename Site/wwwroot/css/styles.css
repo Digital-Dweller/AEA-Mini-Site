@@ -57,7 +57,6 @@ header {
 #contact_form {
     background-color: white;
 }
-
 .contact_form_input {
     display: flex;
     flex-direction: column;
@@ -79,7 +78,6 @@ header {
     background-color: #0D2C58;
     color: white;
 }
-
 #footer_info a {
     color: white;
 }
@@ -95,7 +93,6 @@ header {
     align-items: center;
     align-content: center;
     height: 100%;
-
 }
 #footer_middle a{
     color: white;
@@ -106,9 +103,10 @@ header {
     align-items: center;
 
 }
-
-
-
+#live-region {
+    flex-basis: 100%;
+    color: red;
+}
 @media (max-width: 768px){
     #AEA_icon {
         width: 15%;
@@ -179,12 +177,14 @@ header {
         gap: 1rem;
         margin-top: 1rem;
     }
+    #contact_form_bottom {
+        display: flex;
+        flex-direction: column;
+    }
     #footer {
         display: flex;
         flex-direction: column;
-
     }
-
     #footer_info {
         margin: 1rem;
     }
@@ -205,26 +205,21 @@ header {
         width: .5rem;
         height: .5rem;
     }
-
     .contact_info_row h2 {
         font-size: .65rem;
         margin: 0;
-
     }
-
     #footer_links {
         font-size: .75rem;
         gap: 1rem;
         margin: 1rem 0;
     }
-
     #social_media_links {
         display: flex;
         flex-direction: row;
         gap: 1.5rem;
         margin-bottom: 2rem;
     }
-
     .social_icon img {
         width: 2.5rem;
         height: auto;
@@ -255,7 +250,6 @@ header {
         align-content: center;
         max-width: 1200px;
         margin-right: 3rem;
-
     }
     #hero_section h1 {
         text-align: center;
@@ -304,7 +298,10 @@ header {
     .contact_form_input {
         width: 25rem;
     }
-
+    #contact_form_bottom {
+        display: flex;
+        flex-direction: row;
+    }
     #contact_form_buttons {
         gap: 1rem;
         margin-top: 1rem;
